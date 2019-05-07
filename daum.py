@@ -6,4 +6,4 @@ soup = BeautifulSoup(req.text, 'html.parser')
 titles = soup.find_all('span',{'class':'txt_issue'})
 
 for x in titles:
-    print(x.get_text())
+    print(x.text)
